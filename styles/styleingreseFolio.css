@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ececec;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    font-family:'Montserrat',sans-serif;
+}
+
+.pantalla{
+    width:1080px;
+    height:1920px;
+    background:linear-gradient(180deg,#2417a9,#2c229e);
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+header{
+
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:35px;
+
+}
+
+.logo-img{
+    height:80px;
+    width:auto;
+
+}
+
+
+
+.titulo{
+    margin-top:140px;
+    text-align:center;
+}
+
+.titulo h1{
+    color:white;
+    font-size:95px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.titulo h2{
+    color:#ff146a;
+    font-size:140px;
+    font-weight:700;
+    margin-top:-15px;
+
+}
+
+.linea{
+    width:82%;
+    height:8px;
+    background:#ff146a;
+    margin:70px auto;
+
+}
+
+.mensaje{
+    position:absolute;
+    right:70px;
+    top:620px;
+    text-align:center;
+
+}
+
+.mensaje h3{
+    color:white;
+    font-size:120px;
+    line-height:115px;
+    font-weight:700;
+    margin-left:220px;
+
+}
+
+.mensaje h4{
+    color:#ff146a;
+    font-size:75px;
+    margin-top:25px;
+    font-weight:700;
+    margin-left:220px;
+
+}
+
+
+.qr{
+    position:absolute;
+    left:70px;
+    bottom:65px;
+    width:120px;
+
+}
+
+
+.facebook{
+    position:absolute;
+    left:35px;
+    bottom:5px;
+    display:flex;
+    align-items:center;
+
+}
+
+.facebook img{
+    width:48px;
+    height:48px;
+
+}
+
+.facebook span{
+    margin-left:12px;
+    color:white;
+    font-size:24px;
+    font-weight:600;
+
+}
+
+
+.info{
+    position:absolute;
+    right:40px;
+    bottom:0;
+    text-align:right;
+
+}
+
+.web{
+    color:white;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.atencion{
+    color:white;
+    font-size:25px;
+    margin:0;
+
+}
+
+.numero{
+    color:white;
+    font-size:25px;
+    margin-top:5px;
+
+}
+
+
+.card-folio {
+    position: absolute;
+    top: 790px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 880px;
+    background: #ffffff;
+    border-radius: 35px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.card-header {
+    background: #e9ecef;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    color: #3b4252;
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.cerrar {
+    color: #7a828e;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.subtexto {
+    color: #1f50a2;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.input-folio {
+    width: 100%;
+    height: 95px;
+    background: #e5e9f0;
+    border: none;
+    border-radius: 20px;
+    padding: 0 35px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #33373d;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input-folio::placeholder {
+    color: #bdc5d1;
+}
+
+.btn-continuar {
+    width: 350px;
+    height: 75px;
+    background: #ff007f;
+    border: none;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 20px rgba(255, 0, 127, 0.35);
+}
+
+.btn-continuar:hover {
+    filter: brightness(1.1);
+}
+
+/*================ BOLETO INCLINADO ================*/
+
+.boleto-img {
+    position: absolute;
+    width: 600px;
+    left: 240px;
+    top: 1120px;
+    transform: rotate(-22deg);
+    filter: drop-shadow(15px 20px 25px rgba(0, 0, 0, 0.45));
+}
+

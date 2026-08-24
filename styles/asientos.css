@@ -1,0 +1,529 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor Kiosco 1080x1920 HD Vertical */
+.kiosk-screen {
+  width: 1080px;
+  height: 1920px;
+  background: linear-gradient(180deg, #020042 0%, #080682 35%, #050352 70%, #020130 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 45px 35px 45px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* LOGOS SUPERIORES */
+.brand-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.logo-excelencia-plus {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.logo-excelencia-plus i {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 34px;
+  display: block;
+  margin-top: -5px;
+  text-align: right;
+}
+
+.logo-excelencia {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.logo-zinabus {
+  font-weight: 900;
+  font-size: 52px;
+  letter-spacing: -1px;
+}
+
+/* ENCABEZADO TITULO */
+.header-section {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.main-title-top {
+  color: #ffffff;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.main-title-bottom {
+  color: #ff007f;
+  font-size: 82px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.service-badge {
+  background-color: #ff007f;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 48px;
+  padding: 16px 0;
+  border-radius: 35px;
+  margin-top: 25px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 3px;
+  box-shadow: 0 10px 25px rgba(255, 0, 127, 0.4);
+}
+
+.bienvenida{
+    color:white;
+    font-size:45px;
+    font-weight:bold;
+    margin-top:30px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* BARRA PROGRESIVA */
+.step-bar {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0 15px 0;
+  padding: 0 10px;
+}
+
+.step-bar .bar {
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.step-bar .bar.active {
+  flex: 1.5;
+  background: #ff007f;
+}
+
+.step-bar .bar.inactive {
+  flex: 1;
+}
+
+/* CARD USUARIO Y RUTA */
+.user-card {
+  background: #ffffff;
+  color: #0b0778;
+  border-radius: 35px;
+  padding: 24px 30px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.user-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 18px;
+  color: #8c9ba8;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.user-name {
+  font-weight: 900;
+  font-size: 26px;
+  color: #0b0778;
+  letter-spacing: 0.5px;
+}
+
+.trip-type-toggle {
+  background: #dbe4ed;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 4px;
+  display: flex;
+  gap: 2px;
+}
+
+.trip-type-toggle span {
+  padding: 8px 22px;
+  border-radius: 16px;
+}
+
+.trip-type-toggle .active {
+  background: #2500aa;
+  color: #ffffff;
+}
+
+.trip-type-toggle .inactive {
+  color: #8c9ba8;
+}
+
+.user-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.wallet-badge {
+  background: #09007a;
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 10px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wallet-label {
+  font-size: 12px;
+  opacity: 0.85;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.wallet-amount {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.route-pills {
+  display: flex;
+  gap: 8px;
+}
+
+.route-pills .pill {
+  background: #dbe4ed;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 18px;
+  color: #3b4b5a;
+}
+
+.route-pills .pill.passenger {
+  background: #2500aa;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.price-pill {
+  background: #ff007f;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 12px 24px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.price-pill .dot {
+  width: 14px;
+  height: 14px;
+  background: #0080d0;
+  border-radius: 50%;
+}
+
+/* CARD HORARIO */
+.schedule-card {
+  background: #ffffff;
+  color: #0b0778;
+  border-radius: 35px;
+  padding: 20px 24px 16px 24px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.fav-btn {
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  color: #2b2b2b;
+  cursor: pointer;
+}
+
+.time-block {
+  background: #1c1bb8;
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 20px 30px;
+  margin-bottom: 12px;
+}
+
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.duration-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.arrow-line {
+  font-size: 28px;
+  margin: -6px 0;
+  letter-spacing: -2px;
+}
+
+.sub-service-tag {
+  font-size: 20px;
+  font-weight: 800;
+  color: #281a80;
+  opacity: 0.6;
+  margin-top: -12px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+
+.amenities {
+  display: flex;
+  gap: 24px;
+  font-size: 18px;
+  color: #6c7a89;
+  font-weight: 800;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.amenities-title {
+  color: #0b0778;
+  margin-right: 6px;
+}
+
+/* CARD AUTOBÚS / ASIENTOS */
+.bus-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 40px;
+  width: 100%;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.seat-map {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, 62px) 45px repeat(2, 62px);
+  gap: 12px 6px;
+  align-items: center;
+  justify-items: center;
+}
+
+.seat-icon {
+  width: 58px;
+  height: 62px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat-icon.selectable {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.seat-icon.selectable:active {
+  transform: scale(0.9);
+}
+
+.seat-icon svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 3px 3px rgba(0,0,0,0.25));
+}
+
+.seat-icon span {
+  position: absolute;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* LEYENDA Y BOTÓN PAGO */
+.footer-action-area {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.legend-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.legend-icon {
+  width: 46px;
+  height: 40px;
+}
+
+.pay-btn {
+  background: linear-gradient(180deg, #3746e8 0%, #0d1282 100%);
+  color: #ffffff;
+  border: 1.5px solid #6b78ff;
+  border-radius: 40px;
+  padding: 22px 55px;
+  font-weight: 900;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* PIE DE PÁGINA (ESTILOS FIEL A LA IMAGEN) */
+.bottom-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #ffffff;
+  padding: 0 10px;
+}
+
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.qr-container {
+  background: #ffffff;
+  padding: 6px;
+  border-radius: 8px;
+  width: 110px;
+  height: 110px;
+}
+
+.qr-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.customer-service-box {
+  text-align: right;
+}
+
+.customer-service-box .title {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.customer-service-box .phone {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.social-row .fb-icon {
+  background: #0078ff;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.website-link {
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+.qr-box {
+    width: 110px;
+    height: 110px;
+    background: transparent; 
+    padding: 0;           
+    border-radius: 0;
+}

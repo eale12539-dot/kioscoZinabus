@@ -1,0 +1,347 @@
+﻿* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.pantalla-kiosk {
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+    overflow: hidden;
+    color: #ffffff;
+    background: linear-gradient(180deg, #02022b 0%, #0a0a78 45%, #12128a 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 50px 30px 50px;
+    transform: scale(calc(min(100vw / 1080, 100vh / 1920)));
+    transform-origin: center center;
+}
+
+
+.header-marcas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+
+/* Logos */
+.logo-excelencia-plus {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 0.85;
+}
+
+.logo-excelencia-plus .texto-excelencia {
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.logo-excelencia-plus .texto-plus {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 26px;
+  color: #ffffff;
+  margin-top: 2px;
+  margin-right: 4px;
+}
+
+.logo-excelencia span {
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo-zinabus span {
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+/* Títulos principales */
+.titulo-principal {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  line-height: 1.05;
+}
+
+.titulo-principal .resaltado {
+  color: #e91e63;
+}
+
+/* Línea decorativa bicolor (Rosa y Blanca) */
+.linea-decorativa {
+  width: 650px;
+  height: 6px;
+  margin: 20px auto 0 auto;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right, 
+    #e91e63 0%, 
+    #e91e63 35%, 
+    rgba(255, 255, 255, 0.8) 35%, 
+    rgba(255, 255, 255, 0.8) 100%
+  );
+}
+
+
+.contenedor-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  align-items: center;
+}
+
+.tarjeta-opcion {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  width: 100%;
+}
+
+.circulo-icono {
+  width: 280px;
+  height: 280px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  z-index: 2;
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.circulo-icono img {
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-texto {
+  background-color: #ffffff;
+  height: 235px;
+  width: 670px;
+  border-top-right-radius: 120px;
+  border-bottom-right-radius: 120px;
+  margin-left: -50px;
+  padding-left: 95px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.banner-texto h2 {
+  font-size: 36px;
+  color: #0d2b7a;
+  text-transform: uppercase;
+  line-height: 1.05;
+  font-weight: 900;
+}
+
+.banner-texto h2 .rosa {
+  color: #e91e63;
+}
+
+.banner-texto p {
+  font-size: 24px;
+  color: #8fa0c0;
+  margin-top: 6px;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+
+.contenedor-pantalla-venta {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.bloque-central {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  width: 100%;
+  padding-left: 90px;
+}
+
+.bloque-botones-ruta {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.btn-magenta {
+  width: 580px;
+  height: 70px;
+  background-color: #e91e63;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 900;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-magenta:active {
+  transform: scale(0.98);
+  background-color: #d81b60;
+}
+
+/* Panel de Flechas Laterales */
+.panel-flechas {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+}
+
+.btn-flecha {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.15s;
+}
+
+.btn-flecha:active {
+  transform: scale(0.92);
+}
+
+.btn-flecha svg {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-flecha-arriba {
+  background-color: rgba(30, 136, 229, 0.4);
+  color: #1e88e5;
+}
+
+.btn-flecha-abajo {
+  background-color: #e91e63;
+  color: #ffffff;
+}
+
+
+.footer-kiosk {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+
+.qr-box {
+    width: 110px;
+    height: 110px;
+    background: transparent; 
+    padding: 0;             
+    border-radius: 0;
+}
+
+.qr-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: none;
+    border-radius: 6px;
+}
+
+.red-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.icono-facebook {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.columna-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  text-align: right;
+}
+
+.info-atencion .titulo-atencion {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.info-atencion .telefono {
+  font-size: 32px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.columna-derecha .web {
+  font-size: 24px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}

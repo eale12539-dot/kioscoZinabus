@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ececec;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    font-family:'Montserrat',sans-serif;
+}
+
+.pantalla{
+    width:1080px;
+    height:1920px;
+    background:linear-gradient(180deg,#2417a9,#2c229e);
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+header{
+
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:35px;
+
+}
+
+.logo-img{
+    height:80px;
+    width:auto;
+
+}
+
+
+
+.titulo{
+    margin-top:140px;
+    text-align:center;
+    
+}
+
+.titulo h1{
+    color:white;
+    font-size:105px;
+    font-weight:780;
+    letter-spacing:2px;
+
+}
+
+.titulo h2{
+    color:#ff146a;
+    font-size:150px;
+    font-weight:780;
+    margin-top:-15px;
+
+
+}
+
+.linea{
+    width:82%;
+    height:8px;
+    background:#ff146a;
+    margin:70px auto;
+
+}
+
+
+
+.telefono{
+    position:absolute;
+    left:-80px;
+    bottom:0;
+    width:650px;
+
+}
+
+
+
+.mensaje{
+    position:absolute;
+    right:70px;
+    top:620px;
+    text-align:center;
+
+}
+
+.mensaje h3{
+    color:white;
+    font-size:90px;
+    line-height:115px;
+    font-weight:780;
+    margin-left:220px;
+    
+}
+
+.mensaje h4{
+    color:#ff146a;
+    font-size:80px;
+    margin-top:25px;
+    font-weight:780;
+    margin-left:220px;
+
+}
+
+
+
+.x{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:#ef001d;
+    color:white;
+    font-size:140px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:80px auto;
+    margin-left:530px;
+    box-shadow:0px 10px 25px rgba(0,0,0,.35);
+
+}
+
+
+
+.rojo{
+    width:690px;
+    height:95px;
+    margin-left:310px;
+    margin-top:30px;
+   
+    border-radius:12px;
+    color:white;
+    font-size:40px;
+    font-weight:700;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+button{
+    width:620px;
+    height:85px;
+    margin-left:220px;
+    margin-top:35px;
+    border:none;
+    border-radius:12px;
+    color:white;
+    font-family:'Montserrat',sans-serif;
+    cursor:pointer;
+
+}
+
+.azul{
+    background:linear-gradient(#4a61ff,#3246d8);
+    font-size:25px;
+    font-weight:600;
+    margin-left:290px;
+    border-radius:100px;
+
+}
+
+
+
+.rojo:hover,
+.azul:hover,
+.dosazul:hover{
+    filter:brightness(1.1);
+
+}
+
+
+.footer{
+    position:absolute;
+    bottom:25px;
+    left:0;
+    width:100%;
+    height:170px;
+
+}
+
+
+.qr{
+    position:absolute;
+    left:70px;
+    bottom:65px;
+    width:120px;
+
+}
+
+
+.facebook{
+    position:absolute;
+    left:35px;
+    bottom:5px;
+    display:flex;
+    align-items:center;
+
+}
+
+.facebook img{
+    width:48px;
+    height:48px;
+
+}
+
+.facebook span{
+    margin-left:12px;
+    color:white;
+    font-size:24px;
+    font-weight:600;
+
+}
+
+
+.info{
+    position:absolute;
+    right:40px;
+    bottom:0;
+    text-align:right;
+
+}
+
+.web{
+    color:white;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.atencion{
+    color:white;
+    font-size:25px;
+    margin:0;
+
+}
+
+.numero{
+    color:white;
+    font-size:25px;
+    margin-top:5px;
+
+}
+
